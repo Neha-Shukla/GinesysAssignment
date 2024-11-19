@@ -109,7 +109,7 @@
 ## For Docker
   ## Prerequisites
   - install docker and docker-compose
-
+  - update docker-compose.yml file to use proper environment variables
 - docker-compose build
 - docker-compose up
 After testing http://localhost:3000 stop and remove container

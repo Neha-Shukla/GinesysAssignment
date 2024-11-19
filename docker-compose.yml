@@ -9,7 +9,8 @@ services:
       - ./uploads:/usr/src/app/uploads  # Mount the uploads directory inside the container 
     environment:
       - NODE_ENV=development
-      - MONGO_URI=mongodb://mongo:27017/dogdb  # MongoDB URI 
+      - MONGO_URI=mongodb://mongo:27017/dogdb
+      - JWT_SECRET=dfgdfgvdf 
     networks:
       - app-network
     depends_on:
