@@ -5,8 +5,8 @@
 *** Implemented - Swagger for documentation, written unit testcases, added authorization, added image compression, docker containerization
 
 ## Prerequisites
-1. Install Node.js (https://nodejs.org/).
-2. Install `npm` (comes with Node.js).
+1. Install Node.js .
+2. Install `npm`.
 
 ## Steps to Run the API
 1. Clone the repository to your local machine.
