@@ -33,6 +33,11 @@
    ```
    The server will run on `http://localhost:3000`.
 
+6. Run test cases.
+  ```bash
+   npm run test
+   ```
+
 ## Accessing the API
 ### Using Swagger
 1. Open your browser and navigate to `http://localhost:3000/api-docs`.
@@ -66,18 +71,10 @@
    #### 3. Fetch All Dog Images
    - **Method:** GET
    - **URL:** `http://localhost:3000/dogs`
-   - **Headers:** 
-     ```
-     Authorization: Bearer <your-token>
-     ```
 
    #### 4. Fetch a Specific Dog Image
    - **Method:** GET
    - **URL:** `http://localhost:3000/dogs/{id}`
-   - **Headers:** 
-     ```
-     Authorization: Bearer <your-token>
-     ```
 
    #### 5. Update a Dog Image
    - **Method:** PUT

@@ -70,7 +70,7 @@ router.get('/:id', dogsController.fetchDogPic);
  *       201:
  *         description: Dog image uploaded successfully
  */
-router.post('/', upload.single('dogImage'), dogsController.uploadDogPic);
+router.post('/',verifyToken, upload.single('dogImage'), dogsController.uploadDogPic);
 
 /**
  * @swagger
@@ -98,7 +98,7 @@ router.post('/', upload.single('dogImage'), dogsController.uploadDogPic);
  *       200:
  *         description: Dog image updated successfully
  */
-router.put('/:id', upload.single('dogImage'), dogsController.updateDogPic);
+router.put('/:id',verifyToken, upload.single('dogImage'), dogsController.updateDogPic);
 
 /**
  * @swagger
@@ -116,6 +116,6 @@ router.put('/:id', upload.single('dogImage'), dogsController.updateDogPic);
  *       204:
  *         description: Dog image deleted successfully
  */
-router.delete('/:id', dogsController.deleteDogPic);
+router.delete('/:id',verifyToken, dogsController.deleteDogPic);
 
 module.exports = router;

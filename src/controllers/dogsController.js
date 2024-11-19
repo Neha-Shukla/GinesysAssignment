@@ -2,6 +2,7 @@ const DogImage = require('../models/dog');
 const fs = require('fs');
 const path = require('path');
 const { compressImage } = require("../utils/compression")
+
 // Upload a dog picture
 exports.uploadDogPic = async (req, res) => {
   try {
@@ -15,7 +16,7 @@ exports.uploadDogPic = async (req, res) => {
     const compressedImagePath = path.join(__dirname, '../../uploads/dogs', compressedImageFilename);
 
     // Compress the image
-    await compressImage(originalImagePath, compressedImagePath, 800, 600, 80); // Customize compression settings
+    await compressImage(originalImagePath, compressedImagePath, 800, 600, 80);
 
     // Save the compressed image path to the database
     const dogImage = new DogImage({
